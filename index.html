@@ -246,6 +246,35 @@
       height: 100%;
       border: none;
     }
+    .yt-link {
+      display: block;
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      text-decoration: none;
+      background: #000;
+    }
+    .yt-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.2s;
+    }
+    .yt-link:hover img { opacity: 0.75; }
+    .yt-link-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+      pointer-events: none;
+    }
     .video-body {
       padding: 16px;
     }
@@ -1371,10 +1400,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/RSJIp7e7fyY"
-          title="FIFA 11+ — Running Straight Ahead"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=RSJIp7e7fyY" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Straight Ahead">
+          <img src="https://img.youtube.com/vi/RSJIp7e7fyY/hqdefault.jpg" alt="FIFA 11+ — Running Straight Ahead" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 1</span></div>
@@ -1385,10 +1417,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/rPugh9vf9Hg"
-          title="FIFA 11+ — Running Hip Out"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=rPugh9vf9Hg" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Hip Out">
+          <img src="https://img.youtube.com/vi/rPugh9vf9Hg/hqdefault.jpg" alt="FIFA 11+ — Running Hip Out" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 2</span></div>
@@ -1399,10 +1434,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/dyeV-K5wmQA"
-          title="FIFA 11+ — Running Hip In"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=dyeV-K5wmQA" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Hip In">
+          <img src="https://img.youtube.com/vi/dyeV-K5wmQA/hqdefault.jpg" alt="FIFA 11+ — Running Hip In" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 3</span></div>
@@ -1413,10 +1451,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/67FEXBx_G6g"
-          title="FIFA 11+ — Running Circling Partner"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=67FEXBx_G6g" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Circling Partner">
+          <img src="https://img.youtube.com/vi/67FEXBx_G6g/hqdefault.jpg" alt="FIFA 11+ — Running Circling Partner" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 4</span></div>
@@ -1427,10 +1468,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/DlWuFO1e4Xc"
-          title="FIFA 11+ — Running Shoulder Contact"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=DlWuFO1e4Xc" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Shoulder Contact">
+          <img src="https://img.youtube.com/vi/DlWuFO1e4Xc/hqdefault.jpg" alt="FIFA 11+ — Running Shoulder Contact" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 5</span></div>
@@ -1441,10 +1485,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/-qLxW9S1CoM"
-          title="FIFA 11+ — Running Quick Forward and Back"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=-qLxW9S1CoM" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Quick Forward and Back">
+          <img src="https://img.youtube.com/vi/-qLxW9S1CoM/hqdefault.jpg" alt="FIFA 11+ — Running Quick Forward and Back" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 1 · Exercise 6</span></div>
@@ -1466,10 +1513,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/p6VXtWlaJF8"
-          title="FIFA 11+ — The Bench (Forearm Plank)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=p6VXtWlaJF8" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — The Bench (Forearm Plank)">
+          <img src="https://img.youtube.com/vi/p6VXtWlaJF8/hqdefault.jpg" alt="FIFA 11+ — The Bench (Forearm Plank)" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1483,10 +1533,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/U4qn6CHzZ2Q"
-          title="FIFA 11+ — Sideways Bench (Side Plank)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=U4qn6CHzZ2Q" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Sideways Bench (Side Plank)">
+          <img src="https://img.youtube.com/vi/U4qn6CHzZ2Q/hqdefault.jpg" alt="FIFA 11+ — Sideways Bench (Side Plank)" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1500,10 +1553,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/rfZ-i7erbaY"
-          title="FIFA 11+ — Nordic Hamstring Curl (Beginner)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=rfZ-i7erbaY" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Nordic Hamstring Curl (Beginner)">
+          <img src="https://img.youtube.com/vi/rfZ-i7erbaY/hqdefault.jpg" alt="FIFA 11+ — Nordic Hamstring Curl (Beginner)" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1517,10 +1573,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/oN15EId6A3U"
-          title="FIFA 11+ — Single-Leg Stance"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=oN15EId6A3U" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Single-Leg Stance">
+          <img src="https://img.youtube.com/vi/oN15EId6A3U/hqdefault.jpg" alt="FIFA 11+ — Single-Leg Stance" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1534,10 +1593,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/_zYjf23XcRU"
-          title="FIFA 11+ — Squats with Toe Raise"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=_zYjf23XcRU" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Squats with Toe Raise">
+          <img src="https://img.youtube.com/vi/_zYjf23XcRU/hqdefault.jpg" alt="FIFA 11+ — Squats with Toe Raise" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1550,10 +1612,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/MY-IC4ptlhU"
-          title="FIFA 11+ — Jumping"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=MY-IC4ptlhU" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Jumping">
+          <img src="https://img.youtube.com/vi/MY-IC4ptlhU/hqdefault.jpg" alt="FIFA 11+ — Jumping" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta">
@@ -1577,10 +1642,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/xTPjzXl_QIc"
-          title="FIFA 11+ — Running Across the Pitch"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=xTPjzXl_QIc" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Running Across the Pitch">
+          <img src="https://img.youtube.com/vi/xTPjzXl_QIc/hqdefault.jpg" alt="FIFA 11+ — Running Across the Pitch" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 3 · Exercise 1</span></div>
@@ -1591,10 +1659,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/1FTBApO6WWI"
-          title="FIFA 11+ — Bounding"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=1FTBApO6WWI" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Bounding">
+          <img src="https://img.youtube.com/vi/1FTBApO6WWI/hqdefault.jpg" alt="FIFA 11+ — Bounding" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body">
         <div class="video-meta"><span class="video-cat">Part 3 · Exercise 2</span></div>
@@ -1605,10 +1676,13 @@
 
     <div class="video-card">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/mFpOPRUohgA"
-          title="FIFA 11+ — Plant and Cut"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=mFpOPRUohgA" target="_blank" rel="noopener noreferrer" title="FIFA 11+ — Plant and Cut">
+          <img src="https://img.youtube.com/vi/mFpOPRUohgA/hqdefault.jpg" alt="FIFA 11+ — Plant and Cut" loading="lazy">
+          <div class="yt-link-overlay">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="white"/></svg>
+            <span>Watch on YouTube</span>
+          </div>
+        </a>
       </div>
       <div class="video-body" id="vid-plantcut">
         <div class="video-meta"><span class="video-cat">Part 3 · Exercise 3</span></div>
